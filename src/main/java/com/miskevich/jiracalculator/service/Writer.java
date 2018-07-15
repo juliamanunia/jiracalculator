@@ -23,7 +23,6 @@ public class Writer {
             for (TaskDto taskDto : taskDtos) {
                 printWriter.println(mapTaskDtoToString.apply(taskDto));
             }
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
